@@ -27,14 +27,8 @@
 				margin-bottom: 16px;
 				width: 100px;
 			}
-			td {
-				width: 200px;
-			}
 			a, a:visited {
 				color: blue;
-			}
-			table {
-				border-spacing: 0px;
 			}
 		</style>
 	</head>
@@ -43,88 +37,75 @@
 			<h1>CobaltXII's Home</h1>
 			<hr>
 			<div class="project">
-				<img class="profile" src="cobaltxii.png" alt="My profile picture">
+				<img class="profile" src="cobaltxii.png">
 				<p>
-					Hello, I am CobaltXII. You may know me under one of my other Internet nicknames, such as CobaltXII#4538, <a href="https://scratch.mit.edu/users/-Cobalt-/">-Cobalt-</a>, <a href="https://scratch.mit.edu/users/sonicxspriter">sonicxspriter</a>, or cxii. I am a computer enthusiast who enjoys writing various programs in high-level programming languages such as C and C++. I publish most of my creations on <a href="https://github.com/CobaltXII">GitHub</a>; lesser programs may be found on <a href="https://gist.github.com/CobaltXII">GitHub Gists</a>. I am interested in many aspects of computer programming, such as cryptography, networking, emulation, rendering, rasterization, graphical programming, and much more. On this website you will find a list of my better projects. Hopefully you will find something you like.
-					<br>
-					<br>
-					<b>TL;DR</b> I'm CobaltXII, a hobbyist programmer who makes projects in C and C++. This site was made to showcase some of my better projects.
-					<br>
+					Hello, I am CobaltXII. You may know me under one of my other Internet nicknames, such as <a href="https://scratch.mit.edu/users/-Cobalt-/">-Cobalt-</a> or <a href="https://scratch.mit.edu/users/sonicxspriter">sonicxspriter</a>. I am a computer enthusiast who enjoys writing programs in languages such as C or C++. I publish most of my creations on <a href="https://github.com/CobaltXII">GitHub</a>. On this website you will find a list of my major projects. Hopefully you will find something you like.
 				</p>
-				<h3>Major Projects</h3>
+			</div>
+			<hr>
+			<div class="project">
+				<h2>Major Projects</h2>
 				<table>
 					<tr>
-						<td><a href="#orb">Orb</a></td>
-						<td>Tiny raytracer written in C++11</td>
+						<td width="200px"><a href="#sterling">Sterling</a></td>
+						<td>A naive pathtracer written in C++11</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
-						<td><a href="#minceraft">Minceraft</a></td>
+						<td width="200px"><a href="#minceraft">Minceraft</a></td>
 						<td>A Minecraft clone written in C++11</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
-						<td><a href="#planet">Planet</a></td>
-						<td>A planet generator and renderer written in C++11 using libnoise</td>
+						<td width="200px"><a href="#cosmos">Cosmos</a></td>
+						<td>An OpenCL accelerated n-body simulation written in C++11</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
-						<td><a href="#boss">BOSS</a></td>
-						<td>A MS-DOS themed text editor</td>
+						<td width="200px"><a href="#orb">Orb</a></td>
+						<td>A tiny raytracer written in C++11</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
-						<td><a href="#sterling">Sterling</a></td>
-						<td>A naive pathtracer</td>
+						<td width="200px"><a href="#planet">Planet</a></td>
+						<td>A planet generator and renderer written in C++11</td>
 					</tr>
-				</table>
-				<table>
 					<tr>
-						<td><a href="#cosmos">Cosmos</a></td>
-						<td>An OpenCL accelerated n-body simulation</td>
+						<td width="200px"><a href="#boss">BOSS</a></td>
+						<td>A MS-DOS themed text editor written in C++11</td>
 					</tr>
 				</table>
 				<br>
 			</div>
 			<hr>
 			<div class="project">
-				<h2><a id="sterling"></a><a href="https://github.com/CobaltXII/sterling">CobaltXII/sterling</a></h2>
-				<img class="thumbnail" src="sterling.png" alt="A rendering of a glass Stanford dragon">
+				<a id="sterling"><h2><a href="https://github.com/CobaltXII/sterling">CobaltXII/sterling</a></h2></a>
+				<img class="thumbnail" src="sterling.png">
 				<p>
 					<b>SYNOPSIS</b>
 					<br>
-					A naive pathtracer
-					<br>
-					<br>
-					<b>ABSTRACT</b>
-					<br>
-					Sterling is a naive pathtracer written in C++.
+					A naive pathtracer written in C++11
 					<br>
 					<br>
 					<b>DEPENDENCIES</b>
 					<br>
-					Sterling uses the following libraries: stb_image_write (Sean T. Barrett), inih (Ben Hoyt), and tinyobjloader (Syoyo Fujita). They are slow to compile, so they are linked at compile time. To compile these libraries, please run the associated shell scripts that can be found alongside the source code.
-					<br>
-					Sterling also uses GLM for mathematics. GLM is a large (header only) library, and is not included in this repository. You will need to download GLM and add it to the default include path, if you have not done so already.
+					Sterling requires stb_image_write (Sean T. Barrett), inih (Ben Hoyt), tinyobjloader (Syoyo Fujita), GLM, and C++11 or greater. All libraries (excluding GLM) are included in this repository.
 					<br>
 					<br>
 					<b>CREDITS</b>
 					<br>
-					Thanks to Sean T. Barrett, Ben Hoyt, Syoyo Fujita, Ben Kyd, and UglySwedishFisk.
+					Thanks to Sean T. Barrett, Ben Hoyt, Syoyo Fujita, Ben Kyd, Nimmy the Oracle, and UglySwedishFisk.
 				</p>
 			</div>
 			<hr>
 			<div class="project">
-				<h2><a id="minceraft"></a><a href="https://github.com/CobaltXII/minceraft">CobaltXII/minceraft</a></h2>
-				<img class="thumbnail" src="minceraft.png" alt="A bird's-eye view of a Minceraft world">
+				<a id="minceraft"><h2><a href="https://github.com/CobaltXII/minceraft">CobaltXII/minceraft</a></h2></a>
+				<img class="thumbnail" src="minceraft.png">
 				<p>
 					<b>SYNOPSIS</b>
 					<br>
 					A Minecraft clone written in C++11
+					<br>
+					<br>
+					<b>DEPENDENCIES</b>
+					<br>
+					Minceraft requires C++11 or greater, OpenGL 3.3 Core or greater, GLM 0.9.9.3 or greater, libnoise 1.0.0 or greater, and SDL 2.0.9 or greater. Other dependencies such as GLAD, khrplatform, stb_image and stb_image_write (Sean T. Barrett) and FastNoise (Jordan Peck) are included in the repository.
 					<br>
 					<br>
 					<b>DISCLAIMER</b>
@@ -139,12 +120,12 @@
 			</div>
 			<hr>
 			<div class="project">
-				<h2><a id="cosmos"></a><a href="https://github.com/CobaltXII/cosmos">CobaltXII/cosmos</a></h2>
-				<img class="thumbnail" src="cosmos.png" alt="A frame from a video generated with Cosmos">
+				<a id="cosmos"><h2><a href="https://github.com/CobaltXII/cosmos">CobaltXII/cosmos</a></h2></a>
+				<img class="thumbnail" src="cosmos.png">
 				<p>
 					<b>SYNOPSIS</b>
 					<br>
-					An OpenCL accelerated n-body simulation
+					An OpenCL accelerated n-body simulation written in C++11
 					<br>
 					<br>
 					<b>ABSTRACT</b>
@@ -152,69 +133,14 @@
 					Cosmos is an OpenCL accelerated n-body simulator. It can be used to render n-body simulations at a high speed.
 					<br>
 					<br>
-					<b>USAGE</b>
+					<b>DEPENDENCIES</b>
 					<br>
-					Using Cosmos is a two step process. First, you must output binary data of the results of a n-body simulation. Second, you render this to a high-resolution image sequence. Cosmos provides two tools for these purposes, cosmos_simulate and cosmos_render. Cosmos also provides cosmos_sketch, used to quickly render ugly videos for testing.
-					<br>
-					Unfortunately, the Cosmos toolchain does not provide an easy way to tweak initial conditions or parameters. However, it does come with a great set of pre-defined conditions and parameters. If you want to modify these, you will have to edit the source code before compiling. If you want to find places where you can edit parameters, search for the text PARAM in all source files.
-					<br>
-					<br>
-					<b>CREDITS AND LICENSING</b>
-					<br>
-					Cosmos is licensed under the MIT License. Thanks to Sean Barrett for creating stb_image_write. Thanks to the Khronos Group for creating OpenCL, which in my experience was a very nice API to work with. Thanks to Stéfan van der Walt and Nathaniel Smith for creating the palette used in thermal_colormap.
-				</p>
-			</div>
-			<div class="project">
-				<h2><a id="orb"></a><a href="https://github.com/CobaltXII/orb">CobaltXII/orb</a></h2>
-				<img class="thumbnail" src="orb.png" alt="A scene rendered with Orb">
-				<p>
-					<b>SYNOPSIS</b>
-					<br>
-					Tiny raytracer written in C++11
-					<br>
-					<br>
-					<b>ABSTRACT</b>
-					<br>
-					Orb started out as a weekend raytracing project, but got a little bigger. It currently supports scene files, diffuse lighting, specular lighting, recursion, reflection, refraction, procedural environments, procedural texturing, supersampling, and gamma correction. Orb was originally named Orb because it could only raytrace spheres, but it can now raytrace ellipsoids, planes, capsules, cylinders and cones as well.
-					<br>
-					<br>
-					<b>LIBRARIES</b>
-					<br>
-					I make heavy use of Sean T. Barrett's libraries. I also use Ben Hoyt's INI parsing library for loading portable scene files. I also use Syoyo Fujita's Wavefront OBJ parsing library for loading portable model files.
-					<br>
-					<br>
-					<b>SCENES</b>
-					<br>
-					There are a bunch of scene files included in this repository that you can look at to see how they work. Every primitive is mentioned at least once, so it should be easy to tweak a few parameters and see what they do. There is no formal documentation, so you will have to take a peek at the code if you get stumped.
+					Cosmos requires stb_image_write (Sean T. Barrett) and C++11 or greater. All libraries are included in this repository.
 					<br>
 					<br>
 					<b>CREDITS</b>
 					<br>
-					Thanks to Inigo Quilez for his great articles and intersector functions. Thanks to Cyrille Favreau for his ellipsoid intersection function. Thanks to Brook Heisler for a great tutorial on getting started with raytracing. Thanks to Ben Hoyt for his great INI library. Without you guys, this project would never have happened, so thanks again!
-				</p>
-			</div>
-			<hr>
-			<div class="project">
-				<h2><a id="planet"></a><a href="https://github.com/CobaltXII/planet">CobaltXII/planet</a></h2>
-				<img class="thumbnail" src="planet.png" alt="A planet rendered with Planet">
-				<p>
-					<b>SYNOPSIS</b>
-					A planet generator and renderer written in C++11 using libnoise
-					<br>
-					<br>
-					<b>ABSTRACT</b>
-					<br>
-					This repository contains source code for a simple procedural planet generator. The code is written in C++11. The code uses OpenGL 3.3 for hardware graphics acceleration and libnoise for coherent noise generation. The planets start off as an icosahedron. The icosahedron is then subdivided 8 times, after which the icosahedron becomes an icosphere. The vertices are then perturbed by a three-dimensional noise field which creates basins, mountain ranges and water. The elevation of the perturbed vertices is used to determine the color of the vertices. Further preprocessing is applied to create smooth water.
-					<br>
-					<br>
-					<b>DEPENDENCIES</b>
-					<br>
-					The code in this repository requires OpenGL 3.3 Core or greater, GLM 0.9.9.3 or greater, libnoise 1.0.0 or greater, and SDL 2.0.9 or greater in order to compile and run successfully. Other dependencies such as GLAD, khrplatform and noiseutils are included in the repository.
-					<br>
-					<br>
-					<b>COMPILING</b>
-					<br>
-					Since this project is extremely small, no Makefile or CMakeLists.txt is provided. It should be trivial to compile, just link OpenGL 3.3 Core or greater, SDL 2.0.0 or greater, and libnoise. The source files planet.cpp, glad.c and noiseutils.cpp should be compiled.
+					Thanks to Sean Barrett for creating stb_image_write. Thanks to the Khronos Group for creating OpenCL. Thanks to Stéfan van der Walt and Nathaniel Smith for creating the palette used in thermal_colormap.
 					<br>
 					<br>
 					<b>LICENSE</b>
@@ -224,12 +150,65 @@
 			</div>
 			<hr>
 			<div class="project">
-				<h2><a id="boss"></a><a href="https://github.com/CobaltXII/boss">CobaltXII/boss</a></h2>
-				<img class="thumbnail" src="boss.png" alt="BOSS editing it's own source code">
+				<a id="orb"><h2><a href="https://github.com/CobaltXII/orb">CobaltXII/orb</a></h2></a>
+				<img class="thumbnail" src="orb.png">
 				<p>
 					<b>SYNOPSIS</b>
 					<br>
-					A MS-DOS themed text editor
+					A tiny raytracer written in C++11
+					<br>
+					<br>
+					<b>ABSTRACT</b>
+					<br>
+					Orb started out as a weekend raytracing project, but got a little bigger. It currently supports scene files, diffuse lighting, specular lighting, recursion, reflection, refraction, procedural environments, procedural texturing, supersampling, and gamma correction. Orb was originally named Orb because it could only raytrace spheres, but it can now raytrace ellipsoids, planes, capsules, cylinders and cones as well.
+					<br>
+					<br>
+					<b>DEPENDENCIES</b>
+					<br>
+					Orb requires stb_image and stb_image_write (Sean T. Barrett), inih (Ben Hoyt), tinyobjloader (Syoyo Fujita) and C++11 or greater. All libraries are included in this repository.
+					<br>
+					<br>
+					<b>CREDITS</b>
+					<br>
+					Thanks to Inigo Quilez for his great articles and intersector functions. Thanks to Cyrille Favreau for his ellipsoid intersection function. Thanks to Brook Heisler for a great tutorial on getting started with raytracing. Thanks to Ben Hoyt for his great INI library. Thanks to Sean T. Barrett, Ben Hoyt and Syoyo Fujita for their libraries.
+					<b>LICENSE</b>
+					<br>
+					This repository and it's contents are licensed under the MIT License.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="planet"><h2><a href="https://github.com/CobaltXII/planet">CobaltXII/planet</a></h2></a>
+				<img class="thumbnail" src="planet.png">
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					A planet generator and renderer written in C++11
+					<br>
+					<br>
+					<b>ABSTRACT</b>
+					<br>
+					Planet is a procedural planet generator and renderer. It uses icosahedron subdivision to create an icosphere, which is perturbed by a three-dimensional noise field which creates basins, mountain ranges and water.
+					<br>
+					<br>
+					<b>DEPENDENCIES</b>
+					<br>
+					Planet requires C++11 or greater, OpenGL 3.3 Core or greater, GLM 0.9.9.3 or greater, libnoise 1.0.0 or greater, and SDL 2.0.9 or greater. Other dependencies such as GLAD, khrplatform and noiseutils are included in the repository.
+					<br>
+					<br>
+					<b>LICENSE</b>
+					<br>
+					This repository and it's contents are licensed under the MIT License.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="boss"><h2><a href="https://github.com/CobaltXII/boss">CobaltXII/boss</a></h2></a>
+				<img class="thumbnail" src="boss.png">
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					A MS-DOS themed text editor written in C++11
 					<br>
 					<br>
 					<b>ABSTRACT</b>
@@ -252,7 +231,6 @@
 					This repository and it's contents are licensed under the MIT License.
 				</p>
 			</div>
-			<hr>
 		</div>
 	</body>
 </html>
