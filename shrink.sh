@@ -1,0 +1,1 @@
+convert $1.png -resize 25% $1_small.png
