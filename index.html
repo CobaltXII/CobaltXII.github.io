@@ -66,6 +66,10 @@
 						<td>A tiny raytracer written in C++11</td>
 					</tr>
 					<tr>
+						<td width="200px"><a href="#cxcc">CobaltXII/cxcc</a></td>
+						<td>A C compiler for x86-64 written in C++11</td>
+					</tr>
+					<tr>
 						<td width="200px"><a href="#planet">CobaltXII/planet</a></td>
 						<td>A planet generator and renderer written in C++11</td>
 					</tr>
@@ -214,6 +218,36 @@
 					<b>CREDITS</b>
 					<br>
 					Thanks to Inigo Quilez for his great articles and intersector functions. Thanks to Cyrille Favreau for his ellipsoid intersection function. Thanks to Brook Heisler for a great tutorial on getting started with raytracing. Thanks to Sean T. Barrett, Ben Hoyt and Syoyo Fujita for their libraries.
+					<br>
+					<br>
+					<b>LICENSE</b>
+					<br>
+					This repository and it's contents are licensed under the MIT License.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="cxcc"><h2><a href="https://github.com/CobaltXII/cxcc">CobaltXII/cxcc</a></h2></a>
+				<a href="cxcc.png"><img class="thumbnail" src="cxcc.png"></a>
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					A C compiler for x86-64 written in C++11
+					<br>
+					<br>
+					<b>ABSTRACT</b>
+					<br>
+					CXCC is a C compiler for x86-64. It supports a strict subset of the C language, and compiles code that uses 64-bit QWORDs for each variable (pointers and integers). It supports many features, such as pointers, functions, conditional statements, loops, and the System V AMD64 ABI function calling-convention. It's output is extremely unoptimized AT&T assembly, which can be assembled using any assembler (GAS and NASM are popular choices). Obviously, it does not conform to any C standards.
+					<br>
+					<br>
+					<b>RESOURCES</b>
+					<br>
+					I used the lexer/parser architecture in <a href="https://www.youtube.com/watch?v=eF9qWbuQLuw">Joel Yliluoma's "How to Create a Compiler" series</a> (mainly part 1) as a reference for my lexer/parser architecture. I used <a href="http://lisperator.net/pltut/">Mihai Bazon's "How to implement a programming language in JavaScript" tutorial</a> as a starting point while implementing my lexer/parser. I used <a href="https://norasandler.com/2017/11/29/Write-a-Compiler.html">Nora Sandler's "Writing a C Compiler" series</a> to figure out the basic design of compilers, and how C code can translate into assembly. Finally, I used <a href="https://godbolt.org/">Matt Godbolt's "Compiler Explorer"</a> to quickly study (and replicate) the output of professional compilers like GCC and Clang.
+					<br>
+					<br>
+					<b>CREDITS</b>
+					<br>
+					Thanks to Joel Yliluoma, Mihai Bazon, Nora Sandler, Matt Godbolt, Ruslan Spivak and chekwob.
 					<br>
 					<br>
 					<b>LICENSE</b>
