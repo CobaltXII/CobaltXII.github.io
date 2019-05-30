@@ -237,17 +237,12 @@
 					<br>
 					<b>ABSTRACT</b>
 					<br>
-					CXCC is a C compiler for x86-64. It supports a strict subset of the C language, and compiles code that uses 64-bit QWORDs for each variable (pointers and integers). It supports many features, such as pointers, functions, conditional statements, loops, and the System V AMD64 ABI function calling-convention. It's output is extremely unoptimized AT&T assembly, which can be assembled using any assembler (GAS and NASM are popular choices). Obviously, it does not conform to any C standards.
-					<br>
-					<br>
-					<b>RESOURCES</b>
-					<br>
-					I used the lexer/parser architecture in <a href="https://www.youtube.com/watch?v=eF9qWbuQLuw">Joel Yliluoma's "How to Create a Compiler" series</a> (mainly part 1) as a reference for my lexer/parser architecture. I used <a href="http://lisperator.net/pltut/">Mihai Bazon's "How to implement a programming language in JavaScript" tutorial</a> as a starting point while implementing my lexer/parser. I used <a href="https://norasandler.com/2017/11/29/Write-a-Compiler.html">Nora Sandler's "Writing a C Compiler" series</a> to figure out the basic design of compilers, and how C code can translate into assembly. Finally, I used <a href="https://godbolt.org/">Matt Godbolt's "Compiler Explorer"</a> to quickly study (and replicate) the output of professional compilers like GCC and Clang.
+					CXCC is a C compiler for x86-64. It supports a strict subset of the C language, and compiles code that uses 64-bit integers for all variables. It's output is unoptimized AT&T assembly, which can be assembled using any assembler. Unfortunately, it does not completely conform to any C standards.
 					<br>
 					<br>
 					<b>CREDITS</b>
 					<br>
-					Thanks to Joel Yliluoma, Mihai Bazon, Nora Sandler, Matt Godbolt, Ruslan Spivak and chekwob.
+					Thanks to Joel Yliluoma for his "How to Create a Compiler" series, Mihai Bazon for his "How to implement a programming language in JavaScript" tutorial, Nora Sandler for his "Writing a C Compiler" series, and Matt Godbolt for his "Compiler Explorer". Extra thanks go to Ruslan Spivak and chekwob.
 					<br>
 					<br>
 					<b>LICENSE</b>
