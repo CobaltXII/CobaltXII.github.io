@@ -71,6 +71,22 @@
 				}
 				return "";
 			}
+
+			function lightsOn() {
+				document.body.style.backgroundColor = "white";
+				document.body.style.color = "black";
+				document.getElementById("lightSwitch").text = "Turn off the lights";
+				document.getElementById("lightSwitch").onclick = lightsOff;
+				setCookie("lights", "on", 365);
+			}
+
+			function lightsOff() {
+				document.body.style.backgroundColor = "black";
+				document.body.style.color = "white";
+				document.getElementById("lightSwitch").text = "Turn on the lights";
+				document.getElementById("lightSwitch").onclick = lightsOn;
+				setCookie("lights", "off", 365);
+			}
 		</script>
 		<div class="master">
 			<a href="banner.png"><img class="banner" src="banner.png"></a>
