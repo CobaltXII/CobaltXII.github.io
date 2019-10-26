@@ -87,6 +87,21 @@
 				document.getElementById("lightSwitch").onclick = lightsOn;
 				setCookie("lights", "off", 365);
 			}
+
+			function main() {
+				var lights = getCookie("lights");
+				if (lights != "") {
+					if (lights == "on") {
+						lightsOn();
+					} else {
+						lightsOff();
+					}
+				} else {
+					lightsOff();
+				}
+			}
+
+			window.onload = main;
 		</script>
 		<div class="master">
 			<a href="banner.png"><img class="banner" src="banner.png"></a>
