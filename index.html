@@ -43,62 +43,7 @@
 		</style>
 	</head>
 	<body>
-		<script type="text/javascript">
-			function setCookie(cname, cvalue, exdays) {
-				var d = new Date();
-				d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-				var expires = "expires=" + d.toUTCString();
-				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-			}
-
-			function getCookie(cname) {
-				var name = cname + "=";
-				var ca = document.cookie.split(';');
-				for (var i = 0; i < ca.length; i++) {
-					var c = ca[i];
-					while (c.charAt(0) == ' ') {
-						c = c.substring(1);
-					}
-					if (c.indexOf(name) == 0) {
-						return c.substring(name.length, c.length);
-					}
-				}
-				return "";
-			}
-
-			function lightsOn() {
-				document.body.style.backgroundColor = "white";
-				document.body.style.color = "black";
-				document.getElementById("lightSwitch").text = "Turn off the lights";
-				document.getElementById("lightSwitch").onclick = lightsOff;
-				setCookie("lights", "on", 365);
-			}
-
-			function lightsOff() {
-				document.body.style.backgroundColor = "black";
-				document.body.style.color = "white";
-				document.getElementById("lightSwitch").text = "Turn on the lights";
-				document.getElementById("lightSwitch").onclick = lightsOn;
-				setCookie("lights", "off", 365);
-			}
-
-			function main() {
-				var lights = getCookie("lights");
-				if (lights != "") {
-					if (lights == "on") {
-						lightsOn();
-					} else {
-						lightsOff();
-					}
-				} else {
-					lightsOff();
-				}
-			}
-
-			// window.onload = main;
-		</script>
 		<div class="master">
-			<!-- <a href="banner.png"><img class="banner" src="banner.png"></a> !-->
 			<h1>CobaltXII's Home</h1>
 			<hr>
 			<div class="project">
@@ -692,12 +637,6 @@
 					This repository and it's contents are licensed under the MIT License.
 				</p>
 			</div>
-			<!--
-			<hr>
-			<center>
-				<a id="lightSwitch" onclick="lightsOn()" href="javascript:void(0);">Turn on the lights</a>
-			</center>
-			!-->
 		</div>
 	</body>
 </html>
