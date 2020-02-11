@@ -67,6 +67,14 @@
 						<td>A terrain editor written in C++11 using OpenGL</td>
 					</tr>
 					<tr>
+						<td width="250px"><a href="#c4rn4g3">CobaltXII/C4RN4G3</a></td>
+						<td>A top-down shoot 'em up written in C++11</td>
+					</tr>
+					<tr>
+						<td width="250px"><a href="#tarreria">CobaltXII/tarreria</a></td>
+						<td>A Terraria clone written in C++11</td>
+					</tr>
+					<tr>
 						<td width="250px"><a href="#cosmos">CobaltXII/cosmos</a></td>
 						<td>An OpenCL accelerated n-body simulation written in C++11</td>
 					</tr>
@@ -75,12 +83,20 @@
 						<td>A tiny raytracer written in C++11</td>
 					</tr>
 					<tr>
+						<td width="250px"><a href="#bank_heist">CobaltXII/bank_heist</a></td>
+						<td>A tower defence game written in Python</td>
+					</tr>
+					<tr>
 						<td width="250px"><a href="#Minesweeper">CobaltXII/Minesweeper</a></td>
 						<td>A Microsoft Minesweeper clone written in C++11</td>
 					</tr>
 					<tr>
 						<td width="250px"><a href="#cxcc">CobaltXII/cxcc</a></td>
 						<td>A C compiler for x86-64 written in C++11</td>
+					</tr>
+					<tr>
+						<td width="250px"><a href="#logic">CobaltXII/logic</a></td>
+						<td>A logic gate simulator written in Processing</td>
 					</tr>
 					<tr>
 						<td width="250px"><a href="#planet">CobaltXII/planet</a></td>
@@ -476,7 +492,7 @@
 				<p>
 					<b>SYNOPSIS</b>
 					<br>
-					A terrain editor written in C++11 using OpenGL.
+					A terrain editor written in C++11 using OpenGL
 					<br>
 					<br>
 					<b>ABSTRACT</b>
@@ -492,9 +508,86 @@
 					<b>CREDITS</b>
 					<br>
 					Thanks to David Herberth, Sean Barrett, Syoyo Fujita, Jordan Peck and Omar Cornut for their libraries. Further thanks to ThinMatrix for his OpenGL tutorials which were great for starting off.
+					<br>
+					<br>
 					<b>LICENSE</b>
 					<br>
 					This repository and it's contents are licensed under the MIT License. Any libraries included in this repository are under their own licenses, which can probably be found in their subdirectory.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="c4rn4g3"><h2><a href="https://github.com/CobaltXII/C4RN4G3">CobaltXII/C4RN4G3</a></h2></a>
+				<a href="c4rn4g3.png"><img class="thumbnail" src="c4rn4g3_small.png"></a>
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					A top-down shoot 'em up written in C++11
+					<br>
+					<br>
+					<b>ABSTRACT</b>
+					<br>
+					C4RN4G3 is a top-down shoot 'em up written in C++11 using OpenGL. The gameplay is oriented around shooting things to gain ammunition, health, and experience. You can find guns and powerups lying around, as well as barrels that can be destroyed to get loot. The game is singleplayer and the enemies are all bots. There's no win condition, just shoot. It also runs in the browser when compiled to Javascript/WebAssembly with Emscripten.
+					<br>
+					<br>
+					<b>LIBRARIES</b>
+					<br>
+					Tempest uses GLAD for generating OpenGL loaders, stb_image for loading images, stb_image_write for saving images and Dear ImGui for GUI. Emscripten is also used when compiling to Javascript/WebAssembly.
+					<br>
+					<br>
+					<b>CREDITS</b>
+					<br>
+					Thanks to David Herberth, Sean Barrett and Omar Cornut for their libraries.
+					<br>
+					<br>
+					<b>LICENSE</b>
+					<br>
+					This repository and it's contents are licensed under the MIT License. Any libraries included in this repository are under their own licenses, which can probably be found in their subdirectory.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="tarreria"><h2><a href="https://github.com/CobaltXII/tarreria">CobaltXII/tarreria</a></h2></a>
+				<a href="tarreria.png"><img class="thumbnail" src="tarreria_small.png"></a>
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					A Terraria clone written in C++11
+					<br>
+					<br>
+					<b>DEPENDENCIES</b>
+					<br>
+					Tarreria requires C++11 or greater and SDL 2.0.9 or greater. Other dependencies such as FastNoise (Jordan Peck), stb_image and stb_image_write (Sean T. Barrett) are included in the repository.
+					<br>
+					<br>
+					<b>DISCLAIMER</b>
+					<br>
+					This project and it's author are not affiliated with or supported by Re-Logic. All of the files in the directory Assets/ and all of it's subdirectories are the original work and property of Re-Logic. All other files (excluding those in the directories FastNoise/ and stb/) are the original work of the author of this repository, and were not based off of the source code of Terraria.
+					<br>
+					<br>
+					<b>LICENSE</b>
+					<br>
+					This repository and it's code contents are licensed under the MIT License. All images are the property of Re-Logic and must be used responsibly.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="bank_heist"><h2><a href="https://github.com/CobaltXII/bank_heist">CobaltXII/bank_heist</a></h2></a>
+				<a href="bank_heist.png"><img class="thumbnail" src="bank_heist_small.png"></a>
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					A tower defence game written in Python
+					<br>
+					<br>
+					<b>ABSTRACT</b>
+					<br>
+					Bank Heist is a tower defence game. You start with a little bit of money, and you can use that money to purchase traps that automatically shoot at enemies. When you kill an enemy, you get some extra money. This continues as the game progresses and steadily gets harder. Bank Heist provides three levels that save their progress when the game is closed. The objective is to survive for 100 seconds without letting the gold core get destroyed. It was made for a computer science course and got a final mark of 99%.
+					<br>
+					<br>
+					<b>LICENSE</b>
+					<br>
+					This repository and it's code contents are licensed under the MIT License.
 				</p>
 			</div>
 			<hr>
@@ -605,6 +698,26 @@
 					<b>CREDITS</b>
 					<br>
 					Thanks to Joel Yliluoma for his "How to Create a Compiler" series, Mihai Bazon for his "How to implement a programming language in JavaScript" tutorial, Nora Sandler for his "Writing a C Compiler" series, and Matt Godbolt for his "Compiler Explorer". Extra thanks go to Ruslan Spivak and chekwob.
+					<br>
+					<br>
+					<b>LICENSE</b>
+					<br>
+					This repository and it's contents are licensed under the MIT License.
+				</p>
+			</div>
+			<hr>
+			<div class="project">
+				<a id="logic"><h2><a href="https://github.com/CobaltXII/logic">CobaltXII/logic</a></h2></a>
+				<a href="logic.png"><img class="thumbnail" src="logic_small.png"></a>
+				<p>
+					<b>SYNOPSIS</b>
+					<br>
+					An unfinished logic gate simulator written in Java using Processing
+					<br>
+					<br>
+					<b>ABSTRACT</b>
+					<br>
+					Logic is a logic gate simulator written in Java using the Processing library for rendering. It implements a node-based architecture which allows logic-gate circuits to be easily and intuitively constructed. It supports primitive gates, such as NOT, BUFFER, AND, NAND, OR, NOR, XOR and XNOR. It also supports useful input nodes, such as HIGH, LOW, TOGGLE, PULSE, CLOCK, and CONST. And for visualization purposes, it supports LAMP and HEX nodes. To keep circuits as simple as possible, it supports buses, which can be 1-, 4-, 8- or 16-bit. Unfortunately, the logic simulation is flawed and needs to be corrected.
 					<br>
 					<br>
 					<b>LICENSE</b>
