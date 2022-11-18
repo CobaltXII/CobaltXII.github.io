@@ -1,0 +1,215 @@
+:root
+{
+	--bg: #fff;
+	--mg: #cef;
+	--fg: #008;
+
+	--shadow: #0087;
+
+	--gradient-1:  #cef;
+	--gradient-2:  #ecf;
+
+	--banner-url:  url('banners/1.png');
+
+	--dialog-url:  url('dialogs/1.png');
+}
+
+body
+{
+	background: #cef;
+	background: linear-gradient(var(--gradient-1) 0%, var(--gradient-2) 100%);
+	background-attachment: fixed;
+	color: var(--fg);
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+div.banner
+{
+	margin: 0px;
+	padding: 30px 0px;
+	background-image: var(--banner-url);
+	background-attachment: fixed;
+}
+
+div.dialog
+{
+	width: 347px;
+	height: 186px;
+	margin: 30px auto;
+	background-image: var(--dialog-url);
+}
+
+h1.title
+{
+	margin: 0px 50px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+p.aka
+{
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+}
+
+div.socials
+{
+	display: flex;
+	justify-content: center;
+}
+
+img.social
+{
+	margin: 0px 5px;
+}
+
+div.nav
+{
+	display: flex;
+	justify-content: center;
+}
+
+div.nav ul
+{
+	padding: 0;
+}
+
+div.nav ul li
+{
+	float: left;
+	display: block;
+	margin: 5px 10px 0px 10px;
+	padding: 5px 10px;
+	background-color: var(--bg);
+	border: 1px solid var(--fg);
+	box-shadow: 5px 5px var(--shadow);
+	transition: margin ease 0.1s;
+}
+
+div.nav ul li:hover
+{
+	margin: 0px 10px 5px 10px;
+}
+
+div.nav ul li a
+{
+	color: var(--fg);
+	text-decoration: none;
+}
+
+div.nav ul li a:hover
+{
+	text-decoration: underline;
+}
+
+div.cards
+{
+	width: 90%;
+	margin: 25px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.card
+{
+	margin: 10px;
+	background-color: var(--bg);
+	border: 1px solid var(--fg);
+	box-shadow: 5px 5px var(--shadow);
+}
+
+div.card div.header
+{
+	border-bottom: 1px solid var(--fg);
+	display: flex;
+	justify-content: space-between;
+}
+
+div.card div.header div.major
+{
+	display: inline-block;
+	font-weight: bold;
+}
+
+div.card div.header div.minor
+{
+	display: inline-block;
+	font-family: monospace;
+	margin-top: 1px;
+	font-size: 15px;
+}
+
+div.card div.header p
+{
+	margin: 5px
+}
+
+div.card div.subheader
+{
+	background-color: var(--mg);
+	border-bottom: 1px solid var(--fg);
+	display: flex;
+	justify-content: space-between;
+}
+
+div.card div.subheader p
+{
+	margin: 5px
+}
+
+div.card div.body
+{
+	background-color: #fff;
+	overflow: hidden;
+}
+
+div.card div.body img
+{
+	height: 225px;
+	filter: blur(1px);
+	transform: scale(1.02);
+}
+
+div.card div.body p
+{
+	margin: 0px;
+}
+
+div.card div.footer
+{
+	background-color: var(--mg);
+	border-top: 1px solid var(--fg);
+	display: flex;
+	justify-content: space-between;
+}
+
+div.card div.footer div.major
+{
+	display: inline-block;
+}
+
+div.card div.footer div.major a
+{
+	color: var(--fg);
+	text-decoration: none;
+}
+
+div.card div.footer div.major a:hover
+{
+	text-decoration: underline;
+}
+
+div.card div.footer div.minor
+{
+	display: inline-block;
+	font-family: monospace;
+	margin-top: 1px;
+	font-size: 15px;
+}
+
+div.card div.footer p
+{
+	margin: 5px
+}
