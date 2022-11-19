@@ -24,6 +24,11 @@ body
 	margin: 0px;
 }
 
+a
+{
+	color: var(--fg);
+}
+
 div.banner
 {
 	margin: 0px;
@@ -98,7 +103,6 @@ div.nav ul li:hover
 
 div.nav ul li a
 {
-	color: var(--fg);
 	text-decoration: none;
 }
 
@@ -178,7 +182,8 @@ div.card div.body img
 
 div.card div.body p
 {
-	margin: 0px;
+	width: 500px;
+	margin: 5px;
 }
 
 div.card div.footer
@@ -196,7 +201,6 @@ div.card div.footer div.major
 
 div.card div.footer div.major a
 {
-	color: var(--fg);
 	text-decoration: none;
 }
 
