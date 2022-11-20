@@ -182,7 +182,8 @@ div.card div.body img
 
 div.card div.body p
 {
-	width: 500px;
+	width: 25vw;
+	min-width: 400px;
 	margin: 5px;
 }
 
