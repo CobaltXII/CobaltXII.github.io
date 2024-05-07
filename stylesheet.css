@@ -178,6 +178,12 @@ div.card div.body img
 	height: 225px;
 	filter: blur(1px);
 	transform: scale(1.02);
+	transition: 0.3s;
+}
+
+div.card div.body img:hover
+{
+	filter: blur(1px) brightness(125%);
 }
 
 div.card div.body p
